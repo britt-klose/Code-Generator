@@ -6,6 +6,7 @@ var upperCaseArray=["A", "B", "C", "D","E","F","G","H","I","J","K","L","M","N","
 var specialCharArray=["!", "#", "$", "@","%","^","&","*","?","+","=","_","-","<",">","/"];
 var userChoiceArray=[];
 function generatePassword(){
+  userChoiceArray=[]
   var charLength= prompt ("How many characters?")
   if (charLength<8 || charLength>128){
     alert("Character length must be 8-128 characters.")
